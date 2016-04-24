@@ -62,36 +62,36 @@
 // // snaps all type to the baseline grid
 // // for best results, declare spacing and leading using unitless numbers in typeset mixin
 // // can be disabled per-typeset mixin by passing last paramter ($snap) as false
-// $baseline-snap: true !default;
+$baseline-snap: false;
 
 // // map for flexible retrieval of breakpoint info
-// $breakpoint-map: (
-//     0: (
-//         start:      map-get($breakpoints, small),
-//         max:        map-get($breakpoints, medium),
-//         rootsize:   14px
-//     ),
-//     1: (
-//         start:      map-get($breakpoints, medium),
-//         max:        map-get($breakpoints, large),
-//         rootsize:   14px
-//     ),
-//     2: (
-//         start:      map-get($breakpoints, large),
-//         max:        map-get($breakpoints, xlarge),
-//         rootsize:   16px
-//     ),
-//     3: (
-//         start:      map-get($breakpoints, xlarge),
-//         max:        map-get($breakpoints, xxlarge),
-//         rootsize:   16px
-//     ),
-//     4: (
-//         start:      map-get($breakpoints, xxlarge),
-//         max:        map-get($breakpoints, xxlarge) * 1.5,
-//         rootsize:   18px
-//     )
-// );
+$breakpoint-map: (
+    0: (
+        start:      0px,
+        max:        420px,
+        rootsize:   16px
+    ),
+    1: (
+        start:      480px,
+        max:        560px,
+        rootsize:   16px
+    ),
+    2: (
+        start:      768px,
+        max:        840px,
+        rootsize:   16px
+    ),
+    3: (
+        start:      980px,
+        max:        1080px,
+        rootsize:   16px
+    ),
+    4: (
+        start:      1280px,
+        max:        1440px,
+        rootsize:   16px
+    )
+);
 
 // // optional: set a minimum size for all typeset typography
 // $min-font-size: false !default;
@@ -125,22 +125,23 @@
 // // Here are some cap-height sizes to get you started:
 // // Georgia: 0.66, Times / Times New Roman: 0.65, Palatino: 0.52
 // // Lucida Grande: 0.72, Helvetica: 0.65, Helvetica Neue: 0.71, Verdana: 0.76, Tahoma: 0.76
-$sans: (
-    font-family: '"Helvetica Neue", Arial, sans-serif',
-    regular: normal,
-    bold: bold,
-    cap-height: 0.71
-);
+// $sans: (
+//     font-family: '"Helvetica Neue", Arial, sans-serif',
+//     regular: normal,
+//     bold: bold,
+//     cap-height: 0.71
+// ) !default;
 
-$serif: (
-    font-family: 'Georgia, serif',
-    regular: normal,
-    bold: bold,
-    cap-height: 0.66
-);
+// $serif: (
+//     font-family: 'Georgia, serif',
+//     regular: normal,
+//     bold: bold,
+//     cap-height: 0.66
+// ) !default;
 
 // $monospace: (
 //     font-family: 'Menlo, Courier, monospace',
 //     regular: 400,
 //     cap-height: 0.68
 // ) !default;
+

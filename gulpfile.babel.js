@@ -83,7 +83,7 @@ gulp.task('scripts', ['lint'], () => {
 // =======================================================================
 gulp.task('vendor', () => {
   return gulp.src([
-      './bower_components/jquery/jquery.js'
+      './bower_components/jquery/dist/jquery.js'
     ])
     .pipe($.concat('vendor.js'))
     .pipe(gulp.dest('.tmp/scripts'))
