@@ -1,0 +1,26 @@
+// ===================================
+// Colors
+// ===================================
+
+// colors
+$palettes: (
+    green: (
+        base: #088247
+    ),
+    purple: (
+        base: #3d3a6c
+    ),
+    pink: (
+        base: #f9dcda
+    ),
+    grey: (
+        base: #555,
+    ),
+    black: (
+        base: #1e1e20
+    )
+);
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

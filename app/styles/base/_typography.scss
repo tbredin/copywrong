@@ -1,3 +1,19 @@
 body {
     font-family: font-family-of($serif);
 }
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.125rem;
+    margin-top: 2rem;
+}
+
+a {
+    font-weight: bold;
+    color: palette(purple);
+}

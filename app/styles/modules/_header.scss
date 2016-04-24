@@ -1,0 +1,16 @@
+.header {
+    background-color: palette(purple);
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &__content {
+        padding: 1rem;
+        background-color: palette(pink);
+        margin: 0 auto;
+        max-width: 24em;
+        position: relative;
+        top: 1rem;
+        box-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0,0.075);
+    }
+}

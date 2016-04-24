@@ -9,6 +9,7 @@ $debug-allow: false;
 // import site base
 @import "base/normalise";
 @import "base/config";
+@import "base/config-megatype";
 @import "base/mixins";
 
 @include megatype;
@@ -18,3 +19,8 @@ $debug-allow: false;
 @import "base/globals";
 
 @import "modules/page";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/content";
+@import "modules/book";
+@import "modules/face";
