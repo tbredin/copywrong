@@ -1,0 +1,21 @@
+{% import "partials/head.html" as head %}
+
+<!DOCTYPE html>
+    {{ head.render(pageName) }}
+
+    <body>
+        {% include "partials/browsehappy.html" %}
+
+        <div class="page">
+            {#  You write code for this content block in another file --> #}
+            {% block content %}
+
+            {% endblock %}
+
+            {% include "partials/footer.html" %}
+
+        </div>
+
+        {% include "partials/scripts.html" %}
+    </body>
+</html>
