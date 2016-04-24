@@ -78,7 +78,7 @@ var copywrong = (function($){
             }
 
             $target.removeClass('hide');
-            $this.remove();
+            $this.parent().remove();
         });
     }
 
