@@ -3,12 +3,17 @@ body {
 }
 
 h1 {
-    @include typeset($serif, 16px, 20px, 0, 1);
+    @include typeset($serif, 15px, 21px, 0, 1);
     font-weight: normal;
+
+    strong {
+        @include typeset($serif, 16px, 20px, 0, 9px);
+        display: block;
+    }
 }
 
 h2 {
-    @include typeset($serif, 18px, 24px, 0, 1);
+    @include typeset($serif, 18px, 24px, 16px, 1);
     font-weight: bold;
 }
 
@@ -18,5 +23,5 @@ a {
 }
 
 p {
-    @include typeset($serif, 18px, 24px, 0, 1);
+    @include typeset($serif, 18px, 24px, 0, 2.25);
 }

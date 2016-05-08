@@ -7,10 +7,11 @@ $debug-allow: false;
 @import "megatype";
 
 // import site base
+@import "base/mixins";
+@import "base/webfonts";
 @import "base/normalise";
 @import "base/config";
 @import "base/config-megatype";
-@import "base/mixins";
 
 @include megatype;
 

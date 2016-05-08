@@ -1,16 +1,21 @@
 .header {
     background-color: palette(purple);
-    padding: 1rem 0 0;
-    margin-bottom: 2rem;
+    padding: 0.5rem 2rem 0;
+    margin-bottom: 1.625rem;
     position: relative;
 
+    p {
+        @include typeset($serif, 15px, 21px, 56px, 0);
+    }
+
     &__content {
-        padding: 1rem;
+        padding: 1.625rem 1.45rem;
         background-color: palette(pink);
         margin: 0 auto;
-        max-width: 20em;
+        max-width: 9em;
+        margin-bottom: 0.125rem;
         position: relative;
-        top: 1rem;
+        top: 2rem;
         text-align: left;
         box-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0,0.075);
     }

@@ -100,7 +100,7 @@ $breakpoint-map: (
 // $type-measure: 40rem;
 
 // // link offset from baseline
-// $link-offset: 2px;
+$link-offset: 2px;
 
 // // breakpoint count
 // $breakpoint-count: length(map-keys($breakpoint-map)) !default;
