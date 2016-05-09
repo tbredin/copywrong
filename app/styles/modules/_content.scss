@@ -1,6 +1,11 @@
 .content {
-    max-width: 16.5rem;
+    max-width: 16.25rem;
     margin: 3rem auto 2rem;
     padding: 0 2rem;
     flex: 1;
+
+    .footer & {
+        max-width: 13.65rem;
+        margin-top: 2rem;
+    }
 }

@@ -67,11 +67,11 @@ var copywrong = (function($){
             var $target = $(href);
             var $nextAnchor = $this.parent().nextAll().find('a[href*=#]').first();
 
-            console.log($nextAnchor);
+            // console.log($nextAnchor);
 
-            if (href == '#can-you-remind-me') {
+            // if (href == '#can-you-remind-me') {
                 $('.footer').removeClass('hide');
-            }
+            // }
 
             if ($nextAnchor.length) {
                 $nextAnchor.parent().removeClass('hide');

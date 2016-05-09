@@ -3,6 +3,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    border: 0.5rem solid palette(pink);
-    border-bottom: 0 none;
+    // padding-bottom: 42%;
+    position: relative;
+
+    @include min-width(1) {
+        border: 0.5rem solid palette(pink);
+        border-bottom: 0 none;
+    }
 }

@@ -3,25 +3,52 @@ body {
 }
 
 h1 {
-    @include typeset($serif, 15px, 21px, 0, 1);
+    @include typeset($serif, 22.5px, 31.5px, 0, 1);
     font-weight: normal;
 
     strong {
-        @include typeset($serif, 16px, 20px, 0, 9px);
+        @include typeset($serif, 24px, 30px, 0, 13.5px);
         display: block;
     }
 }
 
 h2 {
-    @include typeset($serif, 18px, 24px, 16px, 1);
+    @include typeset($serif, 27px, 36px, 24px, 1);
     font-weight: bold;
 }
 
 a {
     font-weight: bold;
     color: palette(purple);
+
+    &[href*=mailto] {
+        font-weight: normal;
+    }
 }
 
 p {
-    @include typeset($serif, 18px, 24px, 0, 2.25);
+    @include typeset($serif, 27px, 36px, 0, 2.25);
+}
+
+.small {
+    &, .footer & {
+        @include typeset($serif, 13.5px, 24px, 0, 1.57);
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+
+        a {
+            font-weight: normal;
+        }
+    }
+}
+
+input[type=text] {
+    font-size: px-to-rem(16px);
+    padding: 0.75em;
+    border: 1px solid palette(black);
+    font-family: font-family-of($serif);
+}
+
+form {
+    margin-bottom: 2rem;
 }

@@ -1,7 +1,9 @@
 .footer {
     background-color: palette(pink);
-    padding-top: 3rem;
     flex: 1;
-    padding-bottom: 30rem;
-    margin-bottom: -30rem;
+    box-shadow: 0 20rem 0 #f9dcda;
+
+    p {
+        @include typeset($serif, 16.5px, 24.5px, 0, 1.57);
+    }
 }

@@ -1,6 +1,11 @@
 .book {
-    margin: 3rem auto 0;
+    margin: 0 auto 0;
     display: block;
-    max-width: px-to-rem(803px);
-    width: calc(100% - 2rem);
+    max-width: calc(100% - 3rem);
+    width: calc(16.25rem + (100% - 16.25rem) / 2);
+    position: relative;
+
+    @include min-width(2) {
+        max-width: px-to-rem(611px);
+    }
 }

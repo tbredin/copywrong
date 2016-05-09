@@ -69,27 +69,27 @@ $breakpoint-map: (
     0: (
         start:      0px,
         max:        420px,
-        rootsize:   16px
+        rootsize:   24px
     ),
     1: (
         start:      480px,
         max:        560px,
-        rootsize:   16px
+        rootsize:   24px
     ),
     2: (
         start:      768px,
         max:        840px,
-        rootsize:   16px
+        rootsize:   24px
     ),
     3: (
         start:      980px,
         max:        1080px,
-        rootsize:   16px
+        rootsize:   28px
     ),
     4: (
         start:      1280px,
         max:        1440px,
-        rootsize:   16px
+        rootsize:   32px
     )
 );
 
@@ -100,7 +100,7 @@ $breakpoint-map: (
 // $type-measure: 40rem;
 
 // // link offset from baseline
-$link-offset: 2px;
+// $link-offset: 2px;
 
 // // breakpoint count
 // $breakpoint-count: length(map-keys($breakpoint-map)) !default;

@@ -5,7 +5,7 @@
     position: relative;
 
     p {
-        @include typeset($serif, 15px, 21px, 56px, 0);
+        @include typeset($serif, 22.5px, 31.5px, 84px, 0);
     }
 
     &__content {
