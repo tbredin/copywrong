@@ -36,9 +36,7 @@ gulp.task('styles', () => {
     })
     .on('error', $.sass.logError))
     .pipe($.postcss([
-      require('postcss-assets')({loadPaths: ['app/images/']}),
       require('autoprefixer')({browsers: ['last 3 versions', '> 5%', 'IE >= 9']})
-
     ]))
     .pipe($.combineMediaQueries({
       log: true
@@ -200,7 +198,6 @@ gulp.task('minify', () => {
     .pipe($.if('*.css', $.cssnano()))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.html', $.prettify({indent_size: 4})))
-    // .pipe($.if('*.html', $.cacheBust()))
     .pipe(gulp.dest('dist'))
     .pipe($.size());
 });
