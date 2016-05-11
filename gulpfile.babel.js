@@ -218,7 +218,6 @@ gulp.task('default', ['build'], () => {});
 // alias
 gulp.task('dist', ['build'], () => {});
 
-
 // =======================================================================
 // Development watch task.  Does not build anything initially
 // =======================================================================
@@ -267,6 +266,9 @@ gulp.task('watch', (done) => {
   gulp.watch('app/images/icons/**/*.svg', ['icons']);
   gulp.watch('app/fonts/**/*', ['fonts']);
 });
+// alias
+gulp.task('develop', ['watch'], () => {});
+
 
 
 // =======================================================================
