@@ -1,0 +1,15 @@
+.button {
+    background-color: palette(purple);
+    color: white;
+    border: 0 none;
+    padding: 0.625em 1em;
+    font-size: 0.775rem;
+    position: relative;
+    top: 0.05em;
+    font-family: font-family-of($serif);
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(palette(purple), 10%);
+    }
+}

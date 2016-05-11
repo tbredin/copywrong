@@ -31,14 +31,16 @@ p {
 }
 
 .small {
-    &, .footer & {
-        @include typeset($serif, 13.5px, 24px, 0, 1.57);
-        width: calc(100% + 2rem);
-        margin-left: -1rem;
+    @include typeset($serif, 16.5px, 24.5px, 0, 1.57);
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
-        a {
-            font-weight: normal;
-        }
+    a {
+        font-weight: normal;
+    }
+
+    .footer & {
+        @include typeset($serif, 13.5px, 24px, 0, 1.57);
     }
 }
 
