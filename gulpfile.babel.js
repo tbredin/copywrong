@@ -148,7 +148,7 @@ gulp.task('html', ['icons'], () => {
 // =======================================================================
 gulp.task('fonts', () => {
   return gulp.src(paths.fonts)
-    .pipe(gulp.dest('.tmp'))
+    .pipe(gulp.dest('.tmp/webfonts'))
     .pipe($.size());
 });
 
@@ -206,7 +206,7 @@ gulp.task('minify', () => {
 // =======================================================================
 // Build task: builds all files and minifies into 'dist'
 // =======================================================================
-gulp.task('build', ['html', 'images', 'styles', 'vendor', 'scripts', 'modernizr'], () => {
+gulp.task('build', ['html', 'fonts', 'images', 'styles', 'vendor', 'scripts', 'modernizr'], () => {
   gulp.start('minify');
 });
 
