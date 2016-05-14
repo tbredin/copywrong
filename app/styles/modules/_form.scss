@@ -1,0 +1,11 @@
+input[type=text],
+input[type=email] {
+    font-size: px-to-rem(16px);
+    padding: 0.75em;
+    border: 1px solid palette(black);
+    font-family: font-family-of($serif);
+}
+
+form {
+    margin-bottom: 2rem;
+}
