@@ -19,4 +19,13 @@
         text-align: left;
         box-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0,0.075);
     }
+
+    &__book {
+        width: 12.6rem;
+        max-width: 100%;
+        margin: 0 auto -1rem;
+        position: relative;
+        top: 2rem;
+
+    }
 }
