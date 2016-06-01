@@ -8,8 +8,18 @@
     top: 0.05em;
     font-family: font-family-of($serif);
     cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
 
     &:hover {
         background-color: darken(palette(purple), 10%);
     }
+}
+
+a.button {
+    padding-top: 0.55em;
+    padding-bottom: 0.7em;
 }

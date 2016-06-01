@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% set pageName = "Copywrong" %}
+
+{% block content %}
+    <header class="header">
+        {# <div class="header__content">
+            <h1><strong>Copywrong to copywriter</strong> is a practical guide to copywriting for small businesses, small organisations, sole traders and lone rangers.</h1>
+            <p>Tait Ischia</p>
+        </div> #}
+        <img src="images/book-cover.png" class="header__book" alt="Copywrong to copywriter is a practical guide to copywriting for small businesses, small organisations, sole traders and lone rangers. —Tait Ischia">
+    </header>
+
+    <div class="content">
+        <p><strong>Copywrong to copywriter</strong> is a handbook for anyone who feels like they can’t write to save themselves.</p>
+        <p>If you think you’ve got the wrong tone of voice, don’t understand the ins-and-outs of grammar or just don’t feel confident writing about yourself without sounding like an idiot, read this book.</p>
+
+        <p class="toggler"><a href="#sounds-cool">Sounds cool. Tell me more. &raquo;</a></p>
+        <div class="hide" id="sounds-cool">
+            <h2>Sounds cool. Tell me more.</h2>
+            <p>I'm self-publishing it, so it’s not printed yet. I need your help to make it real.</p>
+{#         </div>
+
+        <p class="hide toggler"><a href="#how-can-i-help">How can I help?</a></p>
+        <div class="hide" id="how-can-i-help"> #}
+            <h2>How can I help?</h2>
+            <p>Buy a pre-sale copy. <br>I need to sell 150 copies to cover the printing costs. <br>Sales open 1 June, 2016.</p>
+{#         </div>
+
+        <p class="hide toggler"><a href="#can-you-remind-me">Can you remind me?</a></p>
+        <div class="hide" id="can-you-remind-me"> #}
+            <h2>Can you remind me?</h2>
+            <p>Sure. Sign up to this email. <br>You’ll be the first to know.</p>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//copygui.us13.list-manage.com/subscribe/post?u=e1d92b06ad38636c8a6db59fc&amp;id=3d556f8663" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL" class="hide">Email Address </label>
+                            <input type="email" value="" placeholder="Your email here" name="EMAIL" class="required email" id="mce-EMAIL">
+                            <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1d92b06ad38636c8a6db59fc_3d556f8663" tabindex="-1" value=""></div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            <p class="small">Send your spam to <br><a href="mailto:tait@copygui.de">tait@copygui.de</a></p>
+        </div>
+    </div>
+{% endblock %}

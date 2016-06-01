@@ -18,34 +18,32 @@ var copywrong = (function($){
     // Important: please exercise restraint — this function has a very heavy impact on performance while scrolling!
     _module.scrollUpdates = function() {
         // console.log('== Event: scroll');
-        _module.scrollY = _module.$window.scrollTop();
+        // _module.scrollY = _module.$window.scrollTop();
     }
 
     // put all custom resize updates here
     _module.resizeUpdates = function() {
         // console.log('== Event: resize');
-        crikeyFollower.refreshRailway();
-        crikeyFooter.updateHeight();
     }
 
     // put all custom resize updates here
-    _module.enquireDesktopVars = function() {
-        enquire.register(_module.mediaDesktopUp, {
+    // _module.enquireDesktopVars = function() {
+    //     enquire.register(_module.mediaDesktopUp, {
 
-            // triggered when a media query matches.
-            match : function() {
-                // console.log("matched");
-                _module.isDesktop = true;
-            },
+    //         // triggered when a media query matches.
+    //         match : function() {
+    //             // console.log("matched");
+    //             _module.isDesktop = true;
+    //         },
 
-            // triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch : function() {
-                // console.log("unmatched");
-                _module.isDesktop = false;
-            },
-        });
-    }
+    //         // triggered when the media query transitions
+    //         // *from a matched state to an unmatched state*.
+    //         unmatch : function() {
+    //             // console.log("unmatched");
+    //             _module.isDesktop = false;
+    //         },
+    //     });
+    // }
 
     // initialise all independant modules, bind events
     _module.init = function() {
