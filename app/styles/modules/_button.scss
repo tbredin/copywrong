@@ -2,7 +2,7 @@
     background-color: palette(purple);
     color: white;
     border: 0 none;
-    padding: 0.625em 1em;
+    padding: 0.625em 1em 0.575em;
     font-size: 0.775rem;
     position: relative;
     top: 0.05em;
@@ -19,6 +19,7 @@
     }
 }
 
-a.button {
+a.button,
+.button_large {
     padding: 0.55em 1.25em 0.7em;;
 }
