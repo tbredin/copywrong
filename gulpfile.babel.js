@@ -16,7 +16,8 @@ var paths = {
   scripts: 'app/scripts/**/*.js',
   images: ['app/images/**/*.svg', 'app/images/**/*.gif', 'app/images/**/*.png', 'app/images/**/*.jpg'],
   fonts: 'app/webfonts/**/*',
-  icons: 'app/images/icons/**/*.svg'
+  icons: 'app/images/icons/**/*.svg',
+  files: 'app/files/*'
 };
 
 
@@ -142,6 +143,15 @@ gulp.task('html', ['icons'], () => {
     .pipe($.size());
 });
 
+// =======================================================================
+// Move files
+// =======================================================================
+gulp.task('files', () => {
+  return gulp.src(paths.files)
+    .pipe(gulp.dest('dist/files'))
+    .pipe($.size());
+});
+
 
 // =======================================================================
 // Minify html, css, and js, and move all files to dist
@@ -206,7 +216,7 @@ gulp.task('minify', () => {
 // =======================================================================
 // Build task: builds all files and minifies into 'dist'
 // =======================================================================
-gulp.task('build', ['html', 'fonts', 'images', 'styles', 'vendor', 'scripts', 'modernizr'], () => {
+gulp.task('build', ['html', 'fonts', 'images', 'styles', 'vendor', 'scripts', 'modernizr', 'files'], () => {
   gulp.start('minify');
 });
 
